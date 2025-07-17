@@ -1,23 +1,36 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.daggerHilt)
-    alias(libs.plugins.kotlinKapt)
     alias(libs.plugins.playServices)
-
+    alias(libs.plugins.kotlinKapt)
+    id("com.google.firebase.crashlytics")
 }
 
 android {
-    namespace = "com.apps.aivision"
+signingConfigs {
+    create("release") {
+        storeFile = file("./key.jks")
+        storePassword = "@irayA12"
+        keyAlias = "key0"
+        keyPassword = "@irayA12"
+    }
+}
+    lint {
+          baseline = file("android-lint.xml")
+      }
+    namespace = "com.apps.eris"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.apps.aivision"
+        applicationId = "com.apps.eris"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 8
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -56,6 +69,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildToolsVersion = "35.0.0"
 
     bundle {
         language {
@@ -67,6 +81,7 @@ android {
 
 dependencies {
 
+
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
@@ -77,6 +92,9 @@ dependencies {
     implementation(libs.material3)
     implementation(libs.material.icons)
     implementation(libs.appcompat)
+    implementation(platform(libs.firebase.bom.v3320))
+    implementation(libs.firebase.crashlytics.ndk)
+    implementation(libs.firebase.analytics)
     // navigation
     implementation(libs.navigation.compose)
     // hilt
@@ -151,4 +169,15 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+    // Unit testing dependencies
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-core:3.11.2")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.2")
+
+    // Android testing dependencies
+    androidTestImplementation("androidx.test.ext:junit:1.1.3")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    androidTestImplementation("androidx.test:runner:1.4.0")
+    androidTestImplementation("androidx.test:rules:1.4.0")
 }
