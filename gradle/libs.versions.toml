@@ -82,6 +82,8 @@ appcompat = {group="androidx.appcompat",name ="appcompat",version.ref="app-compa
 itext-android = {group="com.itextpdf.android",name="kernel-android",version.ref="itext"}
 rootbeer-lib = {group="com.scottyab",name="rootbeer-lib",version.ref="rootbeer"}
 [plugins]
+[plugins]
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version = "3.0.1" }
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 daggerHilt = {id ="com.google.dagger.hilt.android",version.ref="hilt"}
