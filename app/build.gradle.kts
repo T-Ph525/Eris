@@ -7,7 +7,7 @@ plugins {
     alias(libs.plugins.daggerHilt)
     alias(libs.plugins.playServices)
     alias(libs.plugins.kotlinKapt)
-    id("com.google.firebase.crashlytics")
+    alias(libs.plugins.firebase.crashlytics)
 }
 
 android {
