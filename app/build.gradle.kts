@@ -92,9 +92,10 @@ dependencies {
     implementation(libs.material3)
     implementation(libs.material.icons)
     implementation(libs.appcompat)
-    implementation(platform(libs.firebase.bom.v3320))
-    implementation(libs.firebase.crashlytics.ndk)
-    implementation(libs.firebase.analytics)
+implementation(platform(libs.firebase.bom))
+implementation(libs.firebase.crashlytics.ndk)
+implementation(libs.firebase.analytics)
+
     // navigation
     implementation(libs.navigation.compose)
     // hilt
