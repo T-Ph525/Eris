@@ -1,68 +1,26 @@
 {
   "project_info": {
-    "project_number": "257772766494",
-    "project_id": "sierra-ai-art-generator",
-    "storage_bucket": "sierra-ai-art-generator.appspot.com"
+    "project_number": "961523622875",
+    "project_id": "eris-f2c51",
+    "storage_bucket": "eris-f2c51.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:257772766494:android:a526f2c58f765429c5350f",
+        "mobilesdk_app_id": "1:961523622875:android:ae6c4e2bad1f109320fdfe",
         "android_client_info": {
-          "package_name": "com.zoon.sierra"
+          "package_name": "com.apps.eris"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "257772766494-7m931ts71ri7qrrgepj6md9og2vuoav5.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.zoon.sierra",
-            "certificate_hash": "4d10648a56cad616699315a26b5ac143336e9653"
-          }
-        },
-        {
-          "client_id": "257772766494-ptnhai6jp3ev96kuo4erehc1srrvt0j2.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.zoon.sierra",
-            "certificate_hash": "5acec9e0f07572fb7dd4ba274d25dfe67faaf4c5"
-          }
-        },
-        {
-          "client_id": "257772766494-tuav8feqpuop2sst6nv6t4ninhv60f1f.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.zoon.sierra",
-            "certificate_hash": "29f9a436afba5518e1174e5438c1ddfa56d4b865"
-          }
-        },
-        {
-          "client_id": "257772766494-uj0n4l1rd8o6l0lb5rt04a78uqnr8u3n.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.zoon.sierra",
-            "certificate_hash": "2f0fd92346417ddd72170de2311fdb2bff17812c"
-          }
-        },
-        {
-          "client_id": "257772766494-v6d9uf9bsfgn3piu98pcgmdq84in466c.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAuzR0dn2ot-velNi53TDzovTJHGkW7mkQ"
+          "current_key": "AIzaSyA0QhdD4is_S2uypMcTcY190CfR7Vl0tqs"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "257772766494-v6d9uf9bsfgn3piu98pcgmdq84in466c.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
