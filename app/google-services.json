@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "257772766494-ptnhai6jp3ev96kuo4erehc1srrvt0j2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoon.sierra",
+            "certificate_hash": "5acec9e0f07572fb7dd4ba274d25dfe67faaf4c5"
+          }
+        },
+        {
           "client_id": "257772766494-tuav8feqpuop2sst6nv6t4ninhv60f1f.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
